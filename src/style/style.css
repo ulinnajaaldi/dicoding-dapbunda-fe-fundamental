@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply max-w-screen-xl mx-auto px-5 md:px-10 xl:px-0;
+}
