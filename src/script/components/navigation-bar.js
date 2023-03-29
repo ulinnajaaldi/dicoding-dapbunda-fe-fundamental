@@ -7,7 +7,7 @@ class NavigationBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <nav class="flex items-center justify-between py-6">
+    <nav class="flex items-center justify-between py-6" id="home">
 
       <div class="flex items-center justify-center gap-2">
         <img src=${logo} alt="logo-app" class="xl:w-14 w-12"/>
@@ -16,8 +16,8 @@ class NavigationBar extends HTMLElement {
 
       <div class="md:flex items-center justify-center gap-4 hidden">
         <div class="flex items-center justify-center gap-5 font-semibold xl:text-base text-sm ">
-          <a href="#" class="hover:text-accent text-primary transition-all duration-200">Home</a>
-          <a href="#" class="hover:text-accent text-primary transition-all duration-200">Menu</a>
+          <a href="#home" class="hover:text-accent text-primary transition-all duration-200">Home</a>
+          <a href="#category-list-up" class="hover:text-accent text-primary transition-all duration-200">Menu</a>
           <a href="#" class="hover:text-accent text-primary transition-all duration-200">About Us</a>
           <a href="#" class="hover:text-accent text-primary transition-all duration-200">Reservation</a>
         </div>
