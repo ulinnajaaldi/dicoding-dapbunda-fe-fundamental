@@ -1,5 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   entry: "./src/app.js",
@@ -27,5 +30,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
+    new webpack.ProvidePlugin({
+      axios: "axios",
+    }),
+    new ESLintPlugin({ extensions: ["js"] }),
   ],
 };
