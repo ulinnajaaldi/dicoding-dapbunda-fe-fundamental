@@ -9,5 +9,11 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "import/extensions": "off",
+    "no-alert": "off",
+  },
 };
