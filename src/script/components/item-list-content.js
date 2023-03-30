@@ -5,13 +5,13 @@ class ItemListContent extends HTMLElement {
 
   render() {
     this.innerHTML = `
-        <div class="text-sm breadcrumbs cursor-default mb-2">
+        <div class="md:text-sm text-xs breadcrumbs cursor-default mb-2">
           <ul>
             <li >Category</li> 
             <li id="breadcrumb">Beef</li> 
           </ul>
         </div>
-        <div class="hidden justify-center items-center w-full bg-white/50 absolute h-full -translate-y-32 z-[99]" id="loader">
+        <div class="hidden justify-center items-center w-full bg-white/50 absolute h-full top-32 -translate-y-32 z-[99]" id="loader">
           <button type="button" class="inline-flex items-center font-semibold leading-6 text-sm transition ease-in-out duration-150 " disabled="">
             <svg class="animate-spin -ml-1 mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -20,7 +20,7 @@ class ItemListContent extends HTMLElement {
             Loading...
           </button>
           </div>
-        <div class="grid grid-cols-2 gap-4" id="meal-cards">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4" id="meal-cards">
         </div>`;
   }
 }
