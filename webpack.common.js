@@ -28,6 +28,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: "./src/assets/favicon.png",
       template: "./src/index.html",
     }),
     new webpack.ProvidePlugin({
